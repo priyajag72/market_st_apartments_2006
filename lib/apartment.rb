@@ -9,7 +9,7 @@ class Apartment
     @bedrooms = apartment_details[:bedrooms]
   end
 
-  def add_renter
+  def add_renter(renter)
 
   end
 end
