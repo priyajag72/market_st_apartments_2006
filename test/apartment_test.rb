@@ -19,4 +19,9 @@ class ApartmentTest < Minitest::Test
     assert_nil unit1.renter
   end
 
+  def test_it_can_add_renter
+    # unit1.add_renter(renter1)
+    assert_equal renter1, unit1.renter
+  end
+
 end
