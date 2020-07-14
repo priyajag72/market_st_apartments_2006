@@ -2,7 +2,7 @@ require "minitest/autorun"
 require "minitest/pride"
 require "./lib/renter"
 
-# class ClassTest < Minitest::Test
+class RenterTest < Minitest::Test
 
   #def test_it_exists
     #assert_instance_of <Class>,
@@ -11,4 +11,4 @@ require "./lib/renter"
   #def test_it_has_attributes
   #end
 
-# end
+end
