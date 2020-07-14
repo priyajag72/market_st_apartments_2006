@@ -22,7 +22,7 @@ class Building
     rent_from_units = @units.map do |unit|
       unit.monthly_rent
     end
-    rent_from_units.sum / rent_from_units.size.to_f
+    (rent_from_units.sum / rent_from_units.size.to_f)
   end
 
 end
