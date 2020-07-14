@@ -1,6 +1,6 @@
 class Building
 
-  attr_reader :units, :renters
+  attr_reader :units
 
   def initialize
     @units = []
@@ -11,7 +11,8 @@ class Building
   end
 
   def renters
-
+    @renters = []
+    @renters << @units[0].renter.name
   end
 
 end
