@@ -10,7 +10,8 @@ class ApartmentTest < Minitest::Test
     assert_instance_of Apartment, unit1
   end
 
-  #def test_it_has_attributes
-  #end
+  def test_it_has_attributes
+    assert_equal "A1", unit1.number
+  end
 
 end
