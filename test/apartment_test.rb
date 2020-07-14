@@ -3,7 +3,7 @@ require "minitest/pride"
 require "./lib/renter"
 require "./lib/apartment"
 
-# class ClassTest < Minitest::Test
+class ApartmentTest < Minitest::Test
 
   #def test_it_exists
     #assert_instance_of <Class>,
@@ -12,4 +12,4 @@ require "./lib/apartment"
   #def test_it_has_attributes
   #end
 
-# end
+end
