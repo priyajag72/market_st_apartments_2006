@@ -32,7 +32,7 @@ class BuildingTest < Minitest::Test
     renter1 = Renter.new("Aurora")
     renter2 = Renter.new("Tim")
     unit1.add_renter(renter1)
-    assert_equal ["Aurora"], buiding.renters
+    assert_equal ["Aurora"], building.renters
   end
 
 end
