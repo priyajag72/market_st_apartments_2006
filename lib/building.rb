@@ -18,4 +18,8 @@ class Building
     renters_in_units
   end
 
+  def average_rent
+
+  end
+
 end
