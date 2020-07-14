@@ -8,6 +8,5 @@ class Building
 
   def add_unit(unit)
     @units << unit
-
   end
 end
