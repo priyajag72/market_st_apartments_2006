@@ -26,6 +26,6 @@ class Building
   end
 
   def rented_units
-
+    @rented_units = []
   end
 end
