@@ -4,11 +4,11 @@ require "./lib/renter"
 require "./lib/apartment"
 require "./lib/building"
 
-class ClassTest < Minitest::Test
+class BuildingTest < Minitest::Test
 
-  #def test_it_exists
-    #assert_instance_of <Class>,
-  #end
+  def test_it_exists
+    assert_instance_of Building, building
+  end
 
   #def test_it_has_attributes
   #end
