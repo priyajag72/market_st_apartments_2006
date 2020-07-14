@@ -6,5 +6,6 @@ class Apartment
     @number = apartment_details[:number]
     @monthly_rent = apartment_details[:monthly_rent]
     @bathrooms = apartment_details[:bathrooms]
+    @bedrooms = apartment_details[:bedrooms]
   end
 end
