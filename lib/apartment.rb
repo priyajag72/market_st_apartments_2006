@@ -8,4 +8,8 @@ class Apartment
     @bathrooms = apartment_details[:bathrooms]
     @bedrooms = apartment_details[:bedrooms]
   end
+
+  def add_renter
+
+  end
 end
