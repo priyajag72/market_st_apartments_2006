@@ -1,5 +1,5 @@
 class Apartment
 
-  def initialize
+  def initialize(apartment_details)
   end
 end
