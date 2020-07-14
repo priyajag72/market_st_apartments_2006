@@ -1,6 +1,6 @@
 class Building
 
-  attr_reader :units
+  attr_reader :units, :renters
 
   def initialize
     @units = []
@@ -9,4 +9,5 @@ class Building
   def add_unit(unit)
     @units << unit
   end
+
 end
