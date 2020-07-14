@@ -11,8 +11,11 @@ class Building
   end
 
   def renters
-    @renters = []
-    @renters << @units[0].renter.name
+    renters_in_units = []
+    @units.select do |unit|
+      renters_in_units << unit.renter.name
+    end
+    renters_in_units
   end
 
 end
