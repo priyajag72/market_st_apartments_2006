@@ -10,4 +10,8 @@ class Building
     @units << unit
   end
 
+  def renters
+
+  end
+
 end
