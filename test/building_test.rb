@@ -22,6 +22,8 @@ class BuildingTest < Minitest::Test
     unit2 = Apartment.new({number: "B2", monthly_rent: 999, bathrooms: 2, bedrooms: 2})
     building.add_unit(unit1)
     assert_equal [unit1], building.units
+    building.add_unit(unit2)
+    assert_equal [unit1, unit2], building.units
   end
 
 end
