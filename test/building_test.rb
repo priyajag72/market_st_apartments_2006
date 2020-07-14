@@ -40,4 +40,19 @@ class BuildingTest < Minitest::Test
     assert_equal ["Aurora", "Tim"], building.renters
   end
 
+  def test_it_can_calculate_average_rent
+    renter1 = Renter.new("Aurora")
+    renter2 = Renter.new("Tim")
+    unit1 = Apartment.new({number: "A1", monthly_rent: 1200, bathrooms: 1, bedrooms: 1})
+    unit2 = Apartment.new({number: "B2", monthly_rent: 999, bathrooms: 2, bedrooms: 2})
+    building = Building.new
+
+    building.add_unit(unit1)
+    unit1.add_renter(renter1)
+    building.add_unit(unit2)
+    unit2.add_renter(renter2)
+
+    assert_equal 1099.5, building.average_rent
+  end
+
 end
