@@ -25,4 +25,7 @@ class Building
     (rent_from_units.sum / rent_from_units.size.to_f)
   end
 
+  def rented_units
+
+  end
 end

@@ -57,7 +57,7 @@ class BuildingTest < Minitest::Test
 
   # ITERATION 3
 
-  def test_case_name
+  def test_it_can_check_units_are_rented
     renter1 = Renter.new("Spencer")
     unit1 = Apartment.new({number: "A1", monthly_rent: 1200, bathrooms: 1, bedrooms: 1})
     unit2 = Apartment.new({number: "B2", monthly_rent: 999, bathrooms: 1, bedrooms: 2})
