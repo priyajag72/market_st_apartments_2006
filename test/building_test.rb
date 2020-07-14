@@ -58,6 +58,7 @@ class BuildingTest < Minitest::Test
   # ITERATION 3
 
   def test_it_can_check_units_are_rented
+    # skip
     renter1 = Renter.new("Spencer")
     unit1 = Apartment.new({number: "A1", monthly_rent: 1200, bathrooms: 1, bedrooms: 1})
     unit2 = Apartment.new({number: "B2", monthly_rent: 999, bathrooms: 1, bedrooms: 2})
@@ -70,9 +71,8 @@ class BuildingTest < Minitest::Test
     building.add_unit(unit3)
 
     assert_equal [], building.rented_units
-
     unit2.add_renter(renter1)
-    assert_equal unit2, building.rented_units
+    assert_equal [unit2], building.rented_units
   end
 
 end

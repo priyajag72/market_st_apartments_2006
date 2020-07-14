@@ -26,6 +26,11 @@ class Building
   end
 
   def rented_units
-    @rented_units = []
+    rented_units = []
+    @units.find_all do |unit|
+      if unit.renter != nil
+        rented_units << unit
+      end
+    end
   end
 end
