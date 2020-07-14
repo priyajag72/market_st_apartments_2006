@@ -6,7 +6,7 @@ class Building
     @units = []
   end
 
-  def add_unit
+  def add_unit(unit)
 
   end
 end
